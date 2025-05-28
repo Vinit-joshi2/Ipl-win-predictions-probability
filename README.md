@@ -95,10 +95,9 @@ This dataset contains <strong>IPL match-level data</strong>, where each row repr
       
 
 
-<h3>
-  
-🧠 Model & Approach
-</h3>
+
+<h1>🧠 Model & Approach</h1>
+
 We used the following machine learning pipeline:
 
 - Data cleaning and preprocessing
@@ -133,10 +132,10 @@ We used metrics like:
 | Accuracy      | *e.g., 0.80* |
 | Log Loss      | *e.g., 0.38* |
 
-<h3>
+<h1>
   
 📈 Visualization
-</h3>
+</h1>
 We used matplotlib and seaborn to visualize:
 
 - Win probabilities over time
@@ -159,12 +158,19 @@ plt.title('Target-' + str(target))
 <img src = "https://github.com/Vinit-joshi2/Ipl-win-predictions-probability/blob/main/Image1.png">
 
 
-✅ How to Run
+<h1>✅ How to Run </h1>
+<h3>
+  
+Step 1: Git clone
+</h3>
 
-# Step 1: Git clone
-git clone "url"
+```
+git clone url
+````
 
-# Step 2: Install Require Library 
+<h3>Step 2: Install Require Library 
+</h3>
+
 ```
 pip install pandas
 pip install numpy
@@ -174,8 +180,11 @@ pip install scikit-learn
 pip install streamlit
 ```
 
+<h3>
+  
+ Step 3:  Run Streamlit app
+</h3>
 
-# Step 3:  Run Streamlit app
 ```
 streamlit run app.py
 ```
