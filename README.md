@@ -94,6 +94,26 @@ This dataset contains <strong>IPL match-level data</strong>, where each row repr
       
 
 
+<h3>
+  
+🧠 Model & Approach
+</h3>
+We used the following machine learning pipeline:
 
+- Data cleaning and preprocessing
 
+- Feature engineering
+
+    - Current Run Rate
+    - Required Run Rate
+    - Required Run Rate
+    - Wickets left
+    - Balls left
+    - Runs left
+
+- One-hot encoding for categorical variables
+
+- Splitting data into training and test sets
+
+- Training a classification model (e.g., Logistic Regression)
 
