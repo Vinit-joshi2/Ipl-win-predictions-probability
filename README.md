@@ -156,3 +156,4 @@ plt.plot(temp_df['end_of_over'],temp_df['lose'],color='red',linewidth=4)
 plt.bar(temp_df['end_of_over'],temp_df['runs_after_over'])
 plt.title('Target-' + str(target))
 ```
+<img src = "https://github.com/Vinit-joshi2/Ipl-win-predictions-probability/blob/main/Image1.png">
