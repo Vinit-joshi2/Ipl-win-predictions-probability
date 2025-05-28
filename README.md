@@ -118,3 +118,41 @@ We used the following machine learning pipeline:
 
 - Training a classification model (e.g., Logistic Regression)
 
+<h3>
+  
+🧪 Evaluation
+</h3>
+We used metrics like:
+
+- Accuracy
+
+- Loss
+  
+| Metric        | Value        |
+| ------------- | ------------ |
+| Accuracy      | *e.g., 0.80* |
+| Log Loss      | *e.g., 0.38* |
+
+<h3>
+  
+📈 Visualization
+</h3>
+We used matplotlib and seaborn to visualize:
+
+- Win probabilities over time
+
+- Loss probabilities over time
+  
+- Wickets in each over
+
+- Runs after each over
+
+```
+import matplotlib.pyplot as plt
+plt.figure(figsize=(18,8))
+plt.plot(temp_df['end_of_over'],temp_df['wickets_in_over'],color='yellow',linewidth=3)
+plt.plot(temp_df['end_of_over'],temp_df['win'],color='#00a65a',linewidth=4)
+plt.plot(temp_df['end_of_over'],temp_df['lose'],color='red',linewidth=4)
+plt.bar(temp_df['end_of_over'],temp_df['runs_after_over'])
+plt.title('Target-' + str(target))
+```
