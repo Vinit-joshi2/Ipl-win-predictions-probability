@@ -105,17 +105,72 @@ We used the following machine learning pipeline:
 - Feature engineering
 
     - Current Run Rate
+      ```
+      # current_runrate = runs / overs
+        delivery_df["crr"] = (delivery_df["current_score"]*6)/(120 - delivery_df["balls_left"])
+      ```
     - Required Run Rate
-    - Required Run Rate
+      ```
+        # required runrate
+          delivery_df["rrr"] = (delivery_df["runs_left"] * 6) / delivery_df["balls_left"]
+      ```
     - Wickets left
+      ```
+        delivery_df['player_dismissed'] = delivery_df['player_dismissed'].fillna("0")
+        delivery_df['player_dismissed'] = delivery_df['player_dismissed'].apply(lambda x:x if x == "0" else "1")
+        delivery_df['player_dismissed'] = delivery_df['player_dismissed'].astype('int')
+        wickets = delivery_df.groupby('match_id')['player_dismissed'].cumsum().values
+        delivery_df['wickets'] = 10 - wickets
+
+      ```
     - Balls left
+      ```
+        delivery_df["balls_left"] = 126 - (delivery_df["over"]*6 + delivery_df["ball"])
+      ```
     - Runs left
+      ```
+        delivery_df["runs_left"] = delivery_df["total_runs_x"] -  delivery_df["current_score"]
+      ```
+    - Current Score
+      ```
+        delivery_df["current_score"] = delivery_df.groupby("match_id")["total_runs_y"].cumsum()
+      ```
 
 - One-hot encoding for categorical variables
+  ```
+    from sklearn.compose import ColumnTransformer
+    from sklearn.preprocessing import OneHotEncoder
+
+    trf = ColumnTransformer([
+        ('trf',OneHotEncoder(sparse_output=False,drop='first'),['batting_team','bowling_team','city'])
+    ]
+    ,remainder='passthrough')
+  
+  ```
 
 - Splitting data into training and test sets
+  ```
+    x = final_df.iloc[: ,:-1]
+    y  = final_df.iloc[: , -1]
+
+    x_train , x_test , y_train , y_test = train_test_split(x , y , test_size = 0.2 , random_state=1)
+     
+  ```
 
 - Training a classification model (e.g., Logistic Regression)
+  ```
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.pipeline import Pipeline
+
+    pipe = Pipeline(steps=[
+    ("step1" , trf),
+    ("step2" , LogisticRegression(solver="liblinear"))
+
+    ])
+
+    pipe.fit(x_train , y_train)
+     
+  ```
 
 <h3>
   
