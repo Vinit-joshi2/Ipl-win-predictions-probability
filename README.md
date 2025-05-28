@@ -188,3 +188,37 @@ pip install streamlit
 ```
 streamlit run app.py
 ```
+
+<h1>Let's test the web app</h1>
+
+<h3>Let select batting team</h3>
+<img src = "https://github.com/Vinit-joshi2/Ipl-win-predictions-probability/blob/main/web1.png">
+
+<h3>Let select bowling team</h3>
+<img src = "https://github.com/Vinit-joshi2/Ipl-win-predictions-probability/blob/main/web2.png">
+
+<h3>Let select host city </h3>
+<img src = "https://github.com/Vinit-joshi2/Ipl-win-predictions-probability/blob/main/web3.png">
+ 
+<h3>Target made by bowling team</h3>
+<img src = "https://github.com/Vinit-joshi2/Ipl-win-predictions-probability/blob/main/web4.png">
+ 
+<h3>Other requirement</h3>
+<img src = "https://github.com/Vinit-joshi2/Ipl-win-predictions-probability/blob/main/web5.png">
+
+<h3>Winning Probability of each team</h3>
+<img src = "https://github.com/Vinit-joshi2/Ipl-win-predictions-probability/blob/main/web6.png">
+
+<h3>Winning Probability of each team</h3>
+<img src = "https://github.com/Vinit-joshi2/Ipl-win-predictions-probability/blob/main/web6.png">
+
+<h3>Prediction</h3>
+<img src = "https://github.com/Vinit-joshi2/Ipl-win-predictions-probability/blob/main/web7.png">
+
+
+ 
+
+
+
+
+
