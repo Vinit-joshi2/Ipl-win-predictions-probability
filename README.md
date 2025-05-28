@@ -91,6 +91,7 @@ This dataset contains <strong>IPL match-level data</strong>, where each row repr
       <td>The player awarded <em>Player of the Match</em>.</td>
     </tr>
 
+</table>
       
 
 
