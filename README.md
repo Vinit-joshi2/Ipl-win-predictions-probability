@@ -24,5 +24,77 @@ The dataset used for this project includes detailed ball-by-ball data from IPL m
 
 📁 Source:  <a href = "https://www.kaggle.com/datasets/ramjidoolla/ipl-data-set">Ipl DataSet</a>
 
+<h1>📄 Dataset Description</h1>
+
+<p>
+This dataset contains <strong>IPL match-level data</strong>, where each row represents one completed match. It includes information about the teams, toss results, match outcomes, player awards, and umpire details.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Column Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Season</code></td>
+      <td>The IPL season (e.g., <code>IPL-2017</code>).</td>
+    </tr>
+    <tr>
+      <td><code>city</code></td>
+      <td>The city where the match was played.</td>
+    </tr>
+    <tr>
+      <td><code>date</code></td>
+      <td>The date of the match (<code>DD-MM-YYYY</code> format).</td>
+    </tr>
+    <tr>
+      <td><code>team1</code></td>
+      <td>The first team (usually bats first).</td>
+    </tr>
+    <tr>
+      <td><code>team2</code></td>
+      <td>The second team (usually bowls first).</td>
+    </tr>
+    <tr>
+      <td><code>toss_winner</code></td>
+      <td>The team that won the toss.</td>
+    </tr>
+    <tr>
+      <td><code>toss_decision</code></td>
+      <td>The toss-winning team's decision: <code>bat</code> or <code>field</code>.</td>
+    </tr>
+    <tr>
+      <td><code>result</code></td>
+      <td>The match result type (e.g., <code>normal</code>, <code>tie</code>, <code>no result</code>).</td>
+    </tr>
+    <tr>
+      <td><code>dl_applied</code></td>
+      <td>Indicates whether the Duckworth–Lewis method was applied (1 = Yes, 0 = No).</td>
+    </tr>
+    <tr>
+      <td><code>winner</code></td>
+      <td>The team that won the match.</td>
+    </tr>
+    <tr>
+      <td><code>win_by_runs</code></td>
+      <td>Margin of victory by runs (non-zero if defending team won).</td>
+    </tr>
+    <tr>
+      <td><code>win_by_wickets</code></td>
+      <td>Margin of victory by wickets (non-zero if chasing team won).</td>
+    </tr>
+    <tr>
+      <td><code>player_of_match</code></td>
+      <td>The player awarded <em>Player of the Match</em>.</td>
+    </tr>
+    <tr>
+      <td><code>venue</code></td>
+      <
+
+
+
 
 
