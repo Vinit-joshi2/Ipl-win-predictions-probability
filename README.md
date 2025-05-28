@@ -264,9 +264,6 @@ streamlit run app.py
 <h3>Winning Probability of each team</h3>
 <img src = "https://github.com/Vinit-joshi2/Ipl-win-predictions-probability/blob/main/web6.png">
 
-<h3>Winning Probability of each team</h3>
-<img src = "https://github.com/Vinit-joshi2/Ipl-win-predictions-probability/blob/main/web6.png">
-
 <h3>Prediction</h3>
 <img src = "https://github.com/Vinit-joshi2/Ipl-win-predictions-probability/blob/main/web7.png">
 
