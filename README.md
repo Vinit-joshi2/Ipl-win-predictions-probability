@@ -90,9 +90,8 @@ This dataset contains <strong>IPL match-level data</strong>, where each row repr
       <td><code>player_of_match</code></td>
       <td>The player awarded <em>Player of the Match</em>.</td>
     </tr>
-    <tr>
-      <td><code>venue</code></td>
-      <
+
+      
 
 
 
