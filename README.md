@@ -157,3 +157,25 @@ plt.bar(temp_df['end_of_over'],temp_df['runs_after_over'])
 plt.title('Target-' + str(target))
 ```
 <img src = "https://github.com/Vinit-joshi2/Ipl-win-predictions-probability/blob/main/Image1.png">
+
+
+✅ How to Run
+
+# Step 1: Git clone
+git clone "url"
+
+# Step 2: Install Require Library 
+```
+pip install pandas
+pip install numpy
+pip install seaborn 
+pip install matplotlib
+pip install scikit-learn
+pip install streamlit
+```
+
+
+# Step 3:  Run Streamlit app
+```
+streamlit run app.py
+```
